@@ -6,6 +6,8 @@
   "license": "ISC",
   "scripts": {
     "serve": "webpack serve",
+    "build:dev": "webpack --mode development",
+    "build:prod": "webpack --mode production",
     "build": "webpack --mode production",
     "build-babel": "npx babel src/app.js --out-file=public/scripts/app.js --presets=@babel/preset-env,@babel/preset-react --watch",
     "dev-server": "webpack serve --mode development",
@@ -22,6 +24,7 @@
     "enzyme-adapter-react-16": "^1.15.6",
     "enzyme-to-json": "^3.6.2",
     "jest": "^28.1.0",
+    "mini-css-extract-plugin": "^2.6.0",
     "moment": "^2.29.3",
     "node-sass": "^7.0.1",
     "normalize.css": "^8.0.1",
